@@ -10,7 +10,7 @@ const routes = [
     component: Dashboard,
     // beforeEnter: checkLoggedIn,
     meta: {
-      layout: "Dashboardayout",
+      layout: "DashboardLayout",
     },
   },
 ];

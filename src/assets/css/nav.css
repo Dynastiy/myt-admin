@@ -1,0 +1,32 @@
+#app-drawer {
+    width: 328px;
+    background-color: var(--primary-700);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#app-drawer ul li .menu-item-link {
+    color: var(--white-50);
+    font-weight: 500;
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    gap: 10px;
+    font-size: 14px;
+    /* padding: 3rem; */
+    /* background-color: red; */
+}
+
+
+#app-drawer ul li .sub-menu .sub-menu-items {
+    color: var(--gray-800);
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#app-drawer ul li .sub-menu  {
+    background-color: var(--primary-200);
+}
