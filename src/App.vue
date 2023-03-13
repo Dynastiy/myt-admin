@@ -1,32 +1,24 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+  <div>
+    <AppLayout>
+      <router-view />
+    </AppLayout>
+    <!-- Success and Error Alerts -->
+    <!-- <SuccessAlert />
+    <ErrorAlert /> -->
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import ErrorAlert from "./components/alerts/errorAlert.vue";
+// import SuccessAlert from "./components/alerts/successAlert.vue";
+import AppLayout from "./layouts/AppLayout.vue";
+export default {
+  components: {
+    AppLayout,
+    // , SuccessAlert, ErrorAlert
+  },
+};
+</script>
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style></style>
