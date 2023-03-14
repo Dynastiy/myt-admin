@@ -1,8 +1,10 @@
 <template>
   <div>
-    <app-header />
     <app-drawer />
-    <slot />
+    <div id="main">
+      <app-header />
+      <slot />
+    </div>
   </div>
 </template>
 

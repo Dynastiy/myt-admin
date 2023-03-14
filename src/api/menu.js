@@ -6,6 +6,7 @@ const menu = [
     url: "/",
     header: false,
     hasLine: true,
+    parent: "dashboard",
   },
 
   {
@@ -30,6 +31,7 @@ const menu = [
         icon: "mdi:user-circle-outline",
         url: "/user-logs",
         parent: "event-logs",
+        subItem: "user-logs",
       },
       {
         id: 2,
@@ -37,6 +39,7 @@ const menu = [
         icon: "ph:chalkboard-teacher",
         url: "/trainer-logs",
         parent: "event-logs",
+        subItem: "trainer-logs",
       },
       {
         id: 3,
@@ -44,6 +47,7 @@ const menu = [
         icon: "tabler:affiliate",
         url: "/affiliate-logs",
         parent: "event-logs",
+        subItem: "affiliate-logs",
       },
       {
         id: 4,
@@ -51,6 +55,7 @@ const menu = [
         icon: "mdi:users-group",
         url: "/admin-logs",
         parent: "event-logs",
+        subItem: "admin-logs",
       },
     ],
   },
@@ -76,18 +81,21 @@ const menu = [
         title: "User Activities",
         icon: "mdi:user-circle-outline",
         url: "/user-activities",
+        subItem: "user-activities",
       },
       {
         id: 2,
         title: "Trainer Activities",
         icon: "ph:chalkboard-teacher",
         url: "/trainer-activites",
+        subItem: "trainer-activities",
       },
       {
         id: 3,
         title: "Website Percentage",
         icon: "ic:baseline-percentage",
         url: "/website-percentage",
+        subItem: "website-percentage",
       },
     ],
   },
@@ -99,6 +107,7 @@ const menu = [
     url: "/reports-and-stats",
     hasChildren: false,
     hasLine: false,
+    parent: "reports-and-stats",
   },
 
   {

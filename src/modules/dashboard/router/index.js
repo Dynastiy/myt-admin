@@ -11,6 +11,7 @@ const routes = [
     // beforeEnter: checkLoggedIn,
     meta: {
       layout: "DashboardLayout",
+      parent: "dashboard",
     },
   },
 ];
