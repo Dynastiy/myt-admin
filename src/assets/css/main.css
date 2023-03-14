@@ -4,11 +4,20 @@
 }
 
 /* DASHBOARD  */
-#dashboard-analytics {
-    display: flex;
-    display: -webkit-flex;
-    display: inline-flex;
-    width: 100%;
+#dashboard {
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+
+#dashboard-analytics, #timeline-sessions, #dashboard-statistics {
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 } 
 
@@ -17,6 +26,13 @@
     padding: 20px;
     border-radius: 8px;
     width: 100%;
+}
+
+.trainer-affiliate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .overview .overview-items {
@@ -36,8 +52,8 @@
 
 .overview-icon {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 4px;
     display: grid;
     display: -moz-grid;
@@ -62,21 +78,173 @@
     color: #236060;
 }
 
-.overview-header h4 {
+.analytics-header h4, .analytics-header h5 {
     color: var(--gray-600);
     font-weight: 500;
 }
 
+.analytics-header h5 {
+    font-size: 16px;
+}
+
 .trainer {
-    width: 50%;
+    width: 100%;
     box-shadow: var(--elevation-1);
-    padding: 22px;
+    padding: 20px;
     border-radius: 8px;
 }
 
 .affiliate {
-    width: 50%;
+    width: 100%;
     box-shadow: var(--elevation-1);
-    padding: 22px;
+    padding: 20px;
     border-radius: 8px;
+}
+
+.data-info {
+    height: 120px;
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.analytic-year {
+    background-color: var(--primary-500);
+    border-radius: 15px;
+    color: var(--white-50);
+    width: max-content;
+    padding: 6px 18px;
+    font-size: 13px;
+}
+
+/* Dashboard Statistics  */
+.monthly-stats {
+    background-color: var(--primary-500);
+    color: var(--white-50);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+
+.monthly-stats .body-text, .monthly-stats h4 {
+    color: var(--white-50);
+}
+
+.monthly-stats h4, .monthly-stats h5 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.monthly-stats .number-tag {
+    background-color: var(--primary-300);
+    height: 40px;
+    width: 40px;
+    display: block;
+    font-size: 14px;
+    border-radius: 4px;
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    place-items: center;
+}
+
+.session-value {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sessions-values {
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sales-stats {
+    box-shadow:  var(--elevation-1);
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sales-stats h4 {
+    font-weight: 400;
+}
+
+.sales-stats h2 {
+    color: var(--gray-800);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sales-stats .number-tag {
+    background-color: var(--primary-300);
+    height: 40px;
+    width: 40px;
+    display: block;
+    font-size: 14px;
+    border-radius: 4px;
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    place-items: center;
+}
+
+/* Activity Timeline  */
+#activity-timeline, #sessions {
+    box-shadow: var(--elevation-1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.timeline-header {
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.timeline-text {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.timeline-link {
+    font-size: 13px;
+    color: var(--primary-500);
+    font-weight: 400;
+}
+
+.timeline-link:hover {
+    color: var(--primary-300);
+}
+
+/* Sesssion  */
+#sessions .desc-text {
+    font-size: 13px;
+}
+
+.session-header {
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.session-date {
+    font-size: 12px;
+    color: var(--gray-800);
+}
+
+.session-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top;
+    -o-object-position: top;
 }

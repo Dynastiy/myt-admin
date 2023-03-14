@@ -1,23 +1,20 @@
 <template>
   <div id="dashboard" class="spacer">
     <DashboardAnalytics />
-    <dashboard-statistics />
-    <ActivityTimeline />
-    <DashboardSessions />
+    <DashboardStatistics />
+    <TimelineSessions />
   </div>
 </template>
 
 <script>
-import ActivityTimeline from "../components/ActivityTimeline.vue";
 import DashboardAnalytics from "../components/DashboardAnalytics.vue";
-import DashboardSessions from "../components/DashboardSessions.vue";
 import DashboardStatistics from "../components/DashboardStatistics.vue";
+import TimelineSessions from "../components/TimelineSessions.vue";
 export default {
   components: {
     DashboardAnalytics,
     DashboardStatistics,
-    ActivityTimeline,
-    DashboardSessions,
+    TimelineSessions,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app-header" class="spacer">
+  <div id="app-header" class="spacer sticky-top">
     <div class="app-header-content">
       <span>
         <i-icon icon="mingcute:home-3-line" class="header-icon" />

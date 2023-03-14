@@ -78,20 +78,27 @@ const menu = [
     children: [
       {
         id: 1,
-        title: "User Activities",
+        title: "All Users",
         icon: "mdi:user-circle-outline",
         url: "/user-activities",
         subItem: "user-activities",
       },
       {
         id: 2,
+        title: "All Admin",
+        icon: "clarity:administrator-line",
+        url: "/all-admin",
+        subItem: "all-admin",
+      },
+      {
+        id: 3,
         title: "Trainer Activities",
         icon: "ph:chalkboard-teacher",
         url: "/trainer-activites",
         subItem: "trainer-activities",
       },
       {
-        id: 3,
+        id: 4,
         title: "Website Percentage",
         icon: "ic:baseline-percentage",
         url: "/website-percentage",
