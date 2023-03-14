@@ -6,3 +6,6 @@
 
 /* Navigation Styles  */
 @import url('./nav.css');
+
+/* Compoenents  */
+@import url("./components.css");

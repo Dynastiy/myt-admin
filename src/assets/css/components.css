@@ -1,3 +1,8 @@
+/* CONTAINERS  */
+.spacer {
+    padding: 1rem 3rem;
+}
+
 /* BUTTONS  */
 
 
@@ -9,3 +14,22 @@
 
 
 /* TAGS  */
+
+
+/* GENERALS  */
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.body-text {
+    color: var(--gray-700);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.desc-text {
+    color: var(--gray-500);
+    font-weight: 300;
+    font-size: 14px;
+}

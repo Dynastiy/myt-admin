@@ -1,3 +1,4 @@
+/* APP DRAWER  */
 #app-drawer {
     width: 328px;
     background-color: var(--primary-700);
@@ -43,6 +44,43 @@
     /* background-color: var(--primary-200); */
 }
 
-/* #app-drawer ul li .sub-menu .sub-menu-items {
+/* APP HEADER  */
+#app-header {
+    box-shadow: var(--elevation-10) ;
+    background: var(--white-50);
+}
 
-} */
+.app-header-content {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icon {
+    font-size: 23px;
+}
+
+.user-name {
+    font-size: 15.6px;
+    font-weight: 400;
+}
+
+.user-menu-actions {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+    border-radius: 50%;
+}
