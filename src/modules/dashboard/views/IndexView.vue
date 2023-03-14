@@ -1,5 +1,5 @@
 <template>
-  <div id="dashboard">
+  <div id="dashboard" class="spacer">
     <DashboardAnalytics />
     <dashboard-statistics />
     <ActivityTimeline />

@@ -1,4 +1,82 @@
 /* MAIN APP CONTAINER  */
 #main {
-    margin-left:328px ;
+    margin-left:280px ;
+}
+
+/* DASHBOARD  */
+#dashboard-analytics {
+    display: flex;
+    display: -webkit-flex;
+    display: inline-flex;
+    width: 100%;
+    gap: 20px;
+} 
+
+.overview {
+    box-shadow: var(--elevation-1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.overview .overview-items {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.overview .overview-items .overview-data {
+    width: 100%;
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    gap: 10px;
+}
+
+.overview-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    display: grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    place-items: center;
+    color: var(--white-50);
+    font-size: 20px;
+}
+
+.overview-icon.users {
+    background-color:#A6B8F5 ;
+    color: #1D2C5E;
+}
+
+.overview-icon.profit {
+    background-color: #FFEACF;
+    color:#B57524;
+}
+
+.overview-icon.transactions {
+    background-color: #8BBEBE;
+    color: #236060;
+}
+
+.overview-header h4 {
+    color: var(--gray-600);
+    font-weight: 500;
+}
+
+.trainer {
+    width: 50%;
+    box-shadow: var(--elevation-1);
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.affiliate {
+    width: 50%;
+    box-shadow: var(--elevation-1);
+    padding: 22px;
+    border-radius: 8px;
 }

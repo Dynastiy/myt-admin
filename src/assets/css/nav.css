@@ -1,11 +1,11 @@
 /* APP DRAWER  */
 #app-drawer {
-    width: 328px;
+    width: 280px;
     background-color: var(--primary-700);
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 0; */
     overflow-y: auto;
 }
 
