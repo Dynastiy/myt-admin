@@ -75,26 +75,27 @@ const menu = [
     hasChildren: true,
     header: false,
     hasLine: true,
+    parent: "management",
     children: [
       {
         id: 1,
         title: "All Users",
         icon: "mdi:user-circle-outline",
-        url: "/user-activities",
-        subItem: "user-activities",
+        url: "/all-users",
+        subItem: "all-users",
       },
       {
         id: 2,
-        title: "All Admin",
+        title: "All Admins",
         icon: "clarity:administrator-line",
-        url: "/all-admin",
-        subItem: "all-admin",
+        url: "/all-admins",
+        subItem: "all-admins",
       },
       {
         id: 3,
         title: "Trainer Activities",
         icon: "ph:chalkboard-teacher",
-        url: "/trainer-activites",
+        url: "/trainer-activities",
         subItem: "trainer-activities",
       },
       {

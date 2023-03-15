@@ -17,7 +17,7 @@
     display: -webkit-flex;
     gap: 10px;
     font-size: 14px;
-    padding: 1.5em 1.8rem;
+    padding: 1rem 1.8rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,15 +31,19 @@
     font-size: 20px;
 }
 
-
 #app-drawer ul li .sub-menu .sub-menu-items {
     color: var(--white-50);
     display: block;
     font-weight: 500;
     font-size: 14px;
-    padding: 1.5em 0 1.5em 4rem;
+    padding: 1.3em 0 1em 4rem;
 }
 
+
+#app-drawer ul li .sub-menu .sub-menu-items.active-sub-menu {
+   background-color: var(--primary-200);
+   color: var(--gray-800);
+}
 #app-drawer ul li .sub-menu  {
     /* background-color: var(--primary-200); */
 }

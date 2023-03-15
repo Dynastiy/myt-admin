@@ -9,8 +9,8 @@
           <span
             class="menu-item-link"
             :role="item.header ? '' : 'button'"
-            @click="openSubMenu(item)"
-            :class="{ 'active-link': item.parent === routeName }"
+            @click="item.hasChildren ? openSubMenu(item) : goToLink(item)"
+            :class="{ 'active-link': item.parent === routeParent }"
           >
             <div class="d-flex align-items-center" style="gap: 10px">
               <i-icon
@@ -23,7 +23,7 @@
             <span v-if="item.hasChildren">
               <i-icon
                 :icon="subMenu ? 'prime:angle-down' : 'prime:angle-right'"
-                width="35px"
+                width="30px"
               />
             </span>
           </span>
@@ -33,6 +33,8 @@
               class="sub-menu-items"
               v-for="subMenu in item.children"
               :key="subMenu.id"
+              @click="$router.push(subMenu.url)"
+              :class="{ 'active-sub-menu': subMenu.subItem === routeName }"
             >
               <i-icon :icon="subMenu.icon" class="menu-item-icon" />
               <span> {{ subMenu.title }} </span>
@@ -57,6 +59,9 @@ export default {
     };
   },
   methods: {
+    goToLink(item) {
+      this.$router.push(item.url);
+    },
     openSubMenu(item) {
       this.subMenu = this.subMenu === item.id ? null : item.id;
     },
@@ -64,6 +69,9 @@ export default {
   computed: {
     routeName() {
       return this.$route.name;
+    },
+    routeParent() {
+      return this.$route.meta.parent;
     },
   },
 };

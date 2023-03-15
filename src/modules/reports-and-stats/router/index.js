@@ -1,16 +1,18 @@
-const Login = () => import("../pages/loginPage.vue");
+// const Reports = () => import("../views/indexView.vue");
+const Reports = () => import("../views/indexView");
 
 // import Vuex store logics
 // import store from "@/store";
 
 const routes = [
   {
-    path: "/login",
-    name: "login",
-    component: Login,
+    path: "/reports-and-stats",
+    name: "reports-and-stats",
+    component: Reports,
     // beforeEnter: checkLoggedIn,
     meta: {
-      layout: "AppAuthLayout",
+      layout: "DashboardLayout",
+      parent: "reports-and-stats",
     },
   },
 ];

@@ -248,3 +248,122 @@
     object-position: top;
     -o-object-position: top;
 }
+
+/* TRAINING CLUSTERS  */
+.cluster-options {
+    display: flex;
+    gap: 50px
+}
+
+.cluster-options span {
+    font-size: 14px;
+    position: relative;
+    padding: 0 4rem;
+    color: var(--gray-500);
+    font-weight: 5  00;
+}
+
+.cluster-options span::after{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--gray-500);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cluster-options span.active-cluster {
+    color: var(--primary-500);
+}
+
+.cluster-options span.active-cluster::after{
+    background-color: var(--primary-500);
+}
+
+.cluster-line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-50);
+}
+
+/* REPORTS AND STATS  */
+#reports-header {
+    background-color: var(--gray-50);
+}
+
+#reports-header .spacer {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    gap: 20px;
+}
+
+.report-header-item {
+    background-color: var(--gray-100);
+    color: var(--gray-500);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+
+.report-header-item.active-item {
+    color: var(--white-50);
+    background-color: var(--primary-500);
+}
+
+.total-data h6.body-text, .total-data h6 {
+    font-weight: 500;
+}
+
+.total-data {
+    width: 250px;
+}
+
+.total-data h6.body-text {
+    font-size: 13px;
+}
+
+.total-data  {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+} 
+
+.total-data.amount {
+    background-color: #99BBBB;
+}
+
+.total-data.users {
+    background-color: #A6B8F5;
+}
+
+.total-data.sessions {
+    background-color: #FFEACF;
+}
+
+.section-cards {
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    gap: 20px;
+}
+
+.reports-table {
+    box-shadow: var(--elevation-1);
+    border-radius: 8px;
+    padding: 2em 0;
+}
+
+.fee-total {
+    background-color:  var(--primary-50);
+    padding: 1em 3em;
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
